@@ -23,7 +23,7 @@ namespace GithubPRProxy.Controllers
            
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://hooks.slack.com/services/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");
+                client.BaseAddress = new Uri("https://hooks.slack.com/services/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");
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
