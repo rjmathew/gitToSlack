@@ -28,7 +28,7 @@ namespace GithubPRProxy.Controllers
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 // New code:
-                var obj = new { text=value};
+                var obj = new { text="Pull Request Created"};
                 HttpResponseMessage response = await client.PostAsJsonAsync(client.BaseAddress,obj);
                 if (response.IsSuccessStatusCode)
                 {
